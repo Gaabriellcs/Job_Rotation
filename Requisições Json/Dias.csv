@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "2c0864a9-a6e3-4d36-8c1a-43f0944d116f",
+		"name": "Target",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Inserir Dia",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n\t{\r\n\"dia\": \"30\",\r\n\t\t\"valor\": \"8414.61\"\r\n    }\r\n\t",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Target",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Target"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar Todos/Dias",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Target",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Target"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
